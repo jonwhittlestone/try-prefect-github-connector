@@ -3,7 +3,7 @@ from prefect import flow, task
 
 @task(log_prints=True)
 def log_me():
-    print('📋 log from task')
+    print('📋 log from task stored at GitHub.com')
 
 @flow(retries=3)
 def etl_web_to_gcs() -> None:
